@@ -1,7 +1,8 @@
-def is_palindrome(word: str) -> bool:
-    word = word.replace(" ", "").lower()
-    return word == word[::-1]
-print(is_palindrome("kajak"))
-print(is_palindrome("anna"))
-print(is_palindrome("pies"))
-print(is_palindrome("kobyła ma mały bok"))
+def palindrome (word):
+    for i in range (0,len(word)-1):
+        if word [i]!= word[len(word)-1-i]:
+            return False 
+    return True
+print(palindrome("kajak"))
+print(palindrome("anna"))
+print(palindrome("rower"))
